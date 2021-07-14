@@ -1,116 +1,335 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- UPDATE: Add description, author, og:site_name, og:title, and og:description text for your course. -->
-    <!-- NOTE: Text presented in ALL_CAPS indicate values you should replace. -->
-    <title>Syllabus Template</title>
-    <meta name="description" content="To be used as a template for your course">
-    <meta name="author" content="Mitchell Hudson (mitchell@makeschool.com)">
-    <meta property="og:site_name" content="FEW 2.2">
-    <meta property="og:title" content="Advanced CSS">
-    <meta property="og:description" content="Learn advanced CSS and Web components">
-    <!-- END CUSTOMIZATION -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="apple-touch-icon" sizes="500x500" href="https://www.makeschool.com/assets/apple-touch-icon-bac21dc3895855ecf9b4a76e8da48a91fa59db1bc7358d7cd33576b63fac2eab.png">
-    <link rel="icon" type="image/png" href="https://www.makeschool.com/assets/favicon_500x500-010a022696e85dab6be51930d58c18cb7c94bb94fc6d326ece1c78bc2bdd268f.png"
-      sizes="500x500">
-    <link rel="icon" type="image/png" href="https://www.makeschool.com/assets/favicon_50x50-68cece25ffd4ff9e6545769d8a525b9ba532d432318c94e33fca9b96edb8cf6a.png"
-      sizes="50x50">
-    <meta name="keywords" content="makeschool">
-    <meta property="og:type" content="website">
-    <!-- UPDATE: Make sure to update all REPO_NAME values for your course repo in the following object.-->
-    <meta property="og:url" content="https://make-school-courses.github.io/FEW-2.2-Web-Design-and-Advanced-CSS">
-    <meta property="og:image" content="http://make-school-courses.github.io/FEW-2.2-Web-Design-and-Advanced-CSS/Web/logo-icononly.svg">
-    <meta property="og:image:secure_url" content="https://make-school-courses.github.io/FEW-2.2-Web-Design-and-Advanced-CSS/Web/logo-icononly.svg">
-    <meta property="og:image:type" content="image/svg">
-    <meta property="og:image:width" content="250">
-    <meta property="og:image:height" content="250">
-    <meta property="og:image:alt" content="Make School">
-    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
-    <link rel="stylesheet" href="Web/style.css">
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- UPDATE: Make sure to update NAME, REPO, and NAMESPACE below-->
-    <script>
-      window.$docsify = {
-        logo: 'Web/logo-icononly.svg',
-        // Update to Course Name
-        name: 'FEW 2.2',
-        // Replace with REPO_NAME
-        repo: 'Make-School-Courses/FEW-2.2-Web-Design-and-Advanced-CSS',
-        themeColor: '#126893',
-        formatUpdated: '{MM}/{DD} {HH}:{mm}',
-        executeScript: true,
-        auto2top: true,
-        autoHeader: true,
-        loadSidebar: true,
-        maxLevel: 6,
-        subMaxLevel: 2,
-        el: "#app",
-        maxLevel: 3,
-        loadNavbar: true,
-        themeable: {
-          readyTransition: true,
-          responsiveTables: true
-        },
-        search: {
-          maxAge: 86400000, // Expiration time, the default one day
-          paths: "auto",
-          placeholder: 'Search class content...',
-          noData: 'No Results!',
-          depth: 4,
-          hideOtherSidebarContent: false,
-          // Replace with REPO_NAME
-          namespace: 'FEW-2.2-Web-Design-and-Advanced-CSS',
-        },
-        copyCode: {
-          buttonText: '📋 Click to Copy',
-          errorText: '',
-          successText: '✓'
-        },
-        'flexible-alerts': {
-          style: 'flat'
+<html>
+	<head>
+		<title></title>
+			<style>
+				.swatch {
+					width: 100px;
+					height: 100px;
+				}
+			
+				.swatch {
+					/* Remove this rule when you set your colors! */
+					background-color: red;
+					margin: 1px;
+				}
+			
+				main {
+					width: 600px;
+					margin: auto;
+				}
+			</style>
+			<!-- framework -->
+			<link rel="stylesheet" href="./styles/style.css">
+			<!-- custom css -->
+			<link rel="stylesheet" href="./styles/index.css">
+	</head>
+	<body>
+
+		<!-- Base Styles - Set the base styles for the page -->
+
+		<main>
+
+			<!-- navbar - Style the navbar -->
+			<section id="nav">
+				<header>
+					<nav class="navbar">
+						<a href="#">Color.com</a>
+						<a href="#about">About</a>
+						<a href="#popular">Popular</a>
+						<a href="#swatches">Swatches</a>
+						<a href="#cart">Order</a>
+						<a href="#contact">Contact</a>
+					</nav>
+				</header>
+			</section>
+
+			<!-- banner -->
+			<section>
+				<h1>
+					<ticker-tape>...Color.com is awesome...</ticker-tape>
+				</h1>
+			</section>
+
+
+			<!-- section about - -->
+			<section id="about">
+				<header>
+					<h1>What is color?</h1>
+				</header>
+				<p><strong>Color</strong> (American English), or colour (Commonwealth English), is the characteristic of visual perception described through color categories, with names such as red, orange, yellow, green, blue, or purple. This perception of color derives from the stimulation of photoreceptor cells (in particular cone cells in the human eye and other vertebrate eyes) by electromagnetic radiation (in the visible spectrum in the case of humans).</p>
+				<p>Color is really important for making great <abbr title="Cascading Style Sheets">CSS</abbr> styles. <a href="#">Color.com is the most amazing place to get your colors.</a></p>
+			</section>
+
+
+			
+			<!-- Section Color Cards - This section contains three cards Style these -->
+			<section id="popular">
+				<div class="card">
+					<img src="images/600px-64_365_Color_Macro.jpg">
+					<p>Colored Pencils</p>
+				</div>
+
+				<div class="card">
+					<img src="images/600px-Nasir-al_molk.jpg">
+					<p>Color effect—sunlight shining through stained glass onto carpet (Nasir ol Molk Mosque located in Shiraz, Iran)</p>
+				</div>
+
+				<div class="card">
+					<img src="images/600px-Chubb_Illusion.png">
+					<p>Colors can appear different depending on their surrounding colors and shapes. The two small squares have exactly the same color, but the right one looks slightly darker, the Chubb illusion.</p>
+				</div>
+			</section>
+
+
+
+			<!-- Section Color Swatches - This section contains -->
+			<section id="swatches">
+				<header>
+					<h1>Colors</h1>
+					<p>At color.com we offer a range of high quality colors.</p>
+				</header>
+				<div class="swatches">
+					<!-- innerHTML w/ div.swatch here -->
+				</div>
+			</section>
+
+			<section id="cart">
+				<header>
+					<h1>Cart</h1>
+				</header>
+
+				<ul id="items">
+					<!-- Items here -->
+				</ul>
+	
+				<div id="total">
+					<!-- Total here -->
+				</div>
+			</section>
+
+
+
+			<!-- Contact form -->
+			<section id="contact">
+				<header>
+					<h1>Contact</h1>
+				</header>
+				<div>
+					<form>
+						<label>
+							name
+							<input type="text">
+						</label>
+
+						<label>
+							Subject
+							<input type="text">
+						</label>
+
+						<label>
+							Message
+							<textarea></textarea>
+						</label>
+
+						<label>
+							Sign up for the newsletter
+							<div class="checkbox">
+								<input id='newsletter'type="checkbox">
+								<label for="newsletter" class='checkbox'></label>
+							</div>
+						</label>
+
+						<label>
+							<div class="radio">
+								<input type="radio" name="user" id='user'>
+								<label for="user" class='radio'></label>
+								<label for="user">Artist</label>
+							</div>
+							
+						</label>
+
+						<label>
+							<div class="radio">
+								<input type="radio" name="user" id='user'>
+								<label for="user" class='radio'></label>
+							</div>
+							Designer
+						</label>
+
+						<label>
+							<div class="radio">
+								<input type="radio" name="user" id='user'>
+								<label for="user" class='radio'></label>
+							</div>
+							Enthusiast
+						</label>
+						<button>Submit</button>
+					</form>
+				</div>
+			</section>
+
+
+			<!-- Footer -->
+			<section id="footer">
+				<footer>
+					<ul>
+
+					</ul>
+				</footer>
+			</section>
+			<script src="./tickertape.js"></script>
+		</main>
+
+		<script>
+			
+
+			// All 100 color swatches has a CSS custom property assigne to it. 
+			// You can use this color each swatch with a unique color. 
+
+			// --color-sample-0 : red
+			// --color-sample-1 : green
+			// ...
+			// --color-sample-99 : blue
+
+			// make some swatches 
+			const swatchCount = 100
+			for (let i = 0; i < swatchCount; i += 1) {
+				const swatch = `
+				<div 
+					class="swatch add-to-cart color-${i}" 
+					style="background-color: 
+					var(--color-sample-${i});" 
+					data-color="Color ${i}" 
+					data-price="${(Math.random() * 10).toFixed(2)}"></div>`
+				document.querySelector('.swatches').innerHTML += swatch
+			}
+
+      const addForm = document.getElementById('add-form')
+      const inputName = document.getElementById('name')
+      const inputPrice = document.getElementById('price')
+      const itemsList = document.getElementById('items')
+      const divTotal = document.getElementById('total')
+
+			function handleClicks(e) {
+				if (e.target.matches('.swatch')) {
+					const color = e.target.dataset.color
+					const price = e.target.dataset.price
+					addToCart(color, price)
+				}
+			}
+			
+			document.querySelector('body').addEventListener('click', handleClicks)
+
+      const cart = []
+
+      document.querySelector('body').addEventListener('submit', function(e){
+        e.preventDefault()
+        const name = inputName.value
+        const price = inputPrice.value
+        addToCart(name, price)
+        showCart()
+      })
+
+			document.querySelector('body').addEventListener('click', function(e) {
+        if (e.target && e.target.classList.contains('remove')) {
+          console.log(e.target.dataset.name)
+          removeFromCart(e.target.dataset.name)
+        } else if (e.target && e.target.classList.contains('add-one')) {
+          addToCart(e.target.dataset.name)
+        } else if (e.target && e.target.classList.contains('remove-one')) {
+          removeFromCart(e.target.dataset.name, 1)
         }
+			})
+
+      document.querySelector('body').addEventListener('input', function(e) {
+        if (e.target.matches('.update')) {
+          const qty = parseInt(e.target.value)
+          const name = e.target.dataset.name
+          updateCart(name, qty)
+        }
+      })
+
+      function addToCart(name, price) {
+        for (let i = 0; i < cart.length; i += 1) {
+          if (cart[i].name === name) {
+            cart[i].qty += 1
+            showCart()
+            return true
+          }
+        }
+        cart.push({ name, price, qty: 1})
+        showCart()
       }
-    </script>
-    <script src="//unpkg.com/docsify-themeable"></script>
-    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-    <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
-    <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
-    <script src="//unpkg.com/docsify/lib/plugins/external-script.min.js"></script>
-    <script src="//unpkg.com/docsify-copy-code@2"></script>
-    <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
-    <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-csharp.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-css.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-docker.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-diff.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-git.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-go.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-graphql.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-handlebars.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-ini.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-javascript.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-markdown.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-nginx.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-pug.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-protobuf.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-python.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-ruby.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-sass.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-scss.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-sql.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-swift.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-typescript.min.js"></script>
-    <script src="//unpkg.com/prismjs/components/prism-yaml.min.js"></script>
-    <script>
-      if (typeof navigator.serviceWorker !== 'undefined') {
-        navigator.serviceWorker.register('Web/sw.js')
+
+      function removeFromCart(name, qty = 0) {
+        console.log(name, qty)
+        for (let i = 0; i < cart.length; i += 1) {
+          if (cart[i].name === name) {
+            if (qty) {
+              let newQty = cart[i].qty - qty
+              if (newQty > 0) {
+                cart[i].qty = newQty
+              } else {
+                cart.splice(i, 1)
+              }
+            } else {
+              cart.splice(i, 1)
+            }
+          }
+        }
+
+        showCart()
       }
-    </script>
-  </body>
+
+      function showCart() {
+        let str = ''
+        for (let i = 0; i < cart.length; i += 1) {
+          str += `<li>
+            <span>
+							<span>${cart[i].name}</span>
+							<span>${cart[i].price}</span> 
+							<span>each x</span>
+							<span>${cart[i].qty}</span> 
+							<span> = </span>  
+							<span>${(cart[i].qty * cart[i].price).toFixed(2)}</span>
+						</span>
+            
+						<span>
+							<input class="update" data-name="${cart[i].name}" type="number" value="${cart[i].qty}">
+							<button class="add-one" data-name="${cart[i].name}"> + </button>
+							<button class="remove-one" data-name="${cart[i].name}"> - </button>
+							<button class="remove" data-name="${cart[i].name}">remove</button>
+						</span>
+          </li>`
+        }
+        itemsList.innerHTML = str
+        divTotal.innerHTML = getTotal()
+      }
+
+      function getTotal() {
+        let total = 0
+        for (let i = 0; i < cart.length; i += 1) {
+          total += cart[i].price * cart[i].qty
+        }
+        return total.toFixed(2)
+      }
+
+      function updateCart(name, qty) {
+        for (let i = 0; i < cart.length; i += 1) {
+          if (cart[i].name === name) {
+            cart[i].qty = qty
+            showCart()
+            return true
+          }
+        }
+        return false
+      }
+
+      showCart()
+      getTotal()
+
+		</script>
+		
+	</body>
 </html>

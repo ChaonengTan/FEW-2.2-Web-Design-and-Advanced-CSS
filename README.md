@@ -1,121 +1,101 @@
-# FEW-2.2: Advanced CSS and Visual Design
+# FEW 2.2 Final Assessment 
 
-## Course Description
+Your job is to style the color.com web site. Do your best. Use your CSS framework as starting point. You don't have to write all of the styles from scratch! 
 
-This course is a deep exploration of CSS. Students take a close look at rendering web pages with CSS, using CSS for motion and interaction, optimizing CSS for use with CSS variables and working with modern CSS frameworks.
+Feel free to modify the HTML markup on the page in anyway that you wish. You must not break the fucntionality! There are two things that happening here: 
 
-Explain why students should care to learn the material presented in this class.
+1. Color swatches are generated in `div.swatches`. 
+2. Clicking swatches adds colors to the cart. 
 
-### Why Learn advanced CSS? 
+Use your CSS framework! Your framework styles should cover much of the problems here. You will have to write some CSS to fill in some details.
 
-CSS is a language that is responsible for the appearance of you web apps. To make great looking web apps that gather great user base you'll need to know it. 
+Problems 5 and 7 will not be covered by your framework. You'll need to solve these from scratch. 
 
-## Prerequisites:  
+## 1 Typography
 
-- [FEW 1.1](https://github.com/Make-School-Courses/FEW-1.1-Web-Foundations)
+Set the font style for text and headings. All fonts on the page should styled. I should not see the default Times New Roman anywhere! 
 
-## Course Specifics
+**What do to:** Style the text including the headings. 
 
-**Course Delivery**: online | 7 weeks | 14 sessions
+## 2 Style The Navbar 
 
-**Course Credits**: 3 units | 37.5 Seat Hours | 75 Total Hours
+Style the navbar and links. The navbar should include the links and the page title.
 
-## Learning Outcomes
+**What to do:** Create a navbar along the top of the page. It should be a horizontal bar with containng the links in `section#nav`
 
-Students by the end of the course will be able to:
+**Extra credit:** Make the navbar sticky. A sticky navbar always stays at the top of the page even when the page scrolls. 
 
-1. Write CSS in the CSS language
-1. Use grid systems for layout
-1. Use CSS preprocessors
-1. Implement CSS variables to make more modular stylesheets
-1. Apply principles of typography and color theory
-1. Apply advanced CSS concepts including transform, transition, and keyframes
-1. Implement industry best practices
+## 3 Style cards 
 
-Beyond these you should be able to apply CSS like a boss and bring your ideas to the large and small screen! Students will also explore new bleeding edge concepts that are the future of the web. 
+These cards have an image and text. **The cards should sit in a horizontal row.** 
 
-## Schedule
+**What to do:** In `section#popular` there are three divs each containing an image and a paragraph. Style these so that look like cards. The cards should be arranged in a horizontal row, use flex. 
 
-**Course Dates:** Monday, May 31 – Friday, July 16, 2021 (7 weeks)
+## 4 Style Colors
 
-**Class Times:** Monday, Wednesday, Friday at 2:15 PM – 4 PM (19 class sessions)
+To make the swatches visible I added width, height, and border. You should change these to fit your ideas. You need to present the colors in a grid. We have to be able to click these divs so they need to be big enough to click. Each div also needs to keep the class name: add-to-cart and the data-color and data-price attributes.
 
-| Class |    Date    |             Topics           | Assignment |
-|:-----:|:----------:|:----------------------------:|:----------:|
-|  - |  Mon, May 31  | **No Class - Memorial Day**  | - |
-|  1 |  Wed, June 2  | [Lesson 1 CSS Review]        | [CSS Diner CSS ZenGarden Type] |
-|  2 |  Fri, June 4  | [Lesson 2 Typography]        | - |
-|  3 |  Mon, June 7  | [Lesson 3 Box Model Flex]    | [CSS Zen Garden Card and Button] |
-|  4 |  Wed, June 9  | [Lesson 4 Background Images] | [CSS Zen Garden Background Images] |
-|  5 |  Fri, June 11 | [Lesson 5 CSS Grid]          | [CSS Zen Garden Grid] |
-|  6 |  Mon, June 14 | [Lesson 6 CSS Frameworks]    | [CSS Zen Garden + CSS Framework] |
-|  7 |  Wed, June 16 | [Lesson 7 Make a CSS Framework] | [Your CSS Framework] |
-|  8 |  Fri, June 18 | [Lesson 8 Styling Navbars] | [Your framework Navbars] |
-|  9 |  Mon, June 21 | [Lesson 9 Form Controls] | [Your framework Form Controls] |
-| 10 |  Wed, June 23 | [Lesson 10 Animation] | Animation |
-| 11 |  Fri, June 25 | [Lesson 11 Before and after] | - |
-| 12 |  Mon, June 28 | [Lesson 12] | - |
-| 13 |  Wed, June 30 | [Lesson 13] | - |
-| 14 |  Fri, July 2  | [Lesson 14] | - |
-| -  |  Mon, July 5  | **No Class - Independence Day Observed** | - |
-| 15 |  Wed, July 7  | [Lesson 15] | Web Components 1 |
-| 16 |  Fri, July 9  | [Lesson 16] | Web Components 2 |
-| 17 |  Mon, July 12 | [Lesson 17] | - |
-| 18 |  Wed, July 14 | Present your work | - |
-| 19 |  Fri, July 16 | Final Assessment | - |
+### 5 Genereate 100 colors
 
-[Lesson 1 CSS Review]: lessons/lesson-01.md
-[Lesson 2 Typography]: lessons/lesson-02.md
-[Lesson 3 Box Model Flex]: lessons/lesson-03.md
-[Lesson 4 Background Images]: lessons/lesson-04.md
-[Lesson 5 CSS Grid]: lessons/lesson-05.md
-[Lesson 6 CSS Frameworks]: lessons/lesson-06.md
-[Lesson 7 Make a CSS Framework]: lessons/lesson-07.md
-[Lesson 8 Styling Navbars]: lessons/lesson-08.md
-[Lesson 9 Form Controls]: lessons/lesson-09.md
-[Lesson 10 Animation]: lessons/lesson-10.md
-[Lesson 11 Before and after]: lessons/lesson-11.md
+There are 100 color swatches but there are no colors. You need to generate 100 unique colors and display them in the swatches. You can do this anyway you like. 
 
-[Lesson 12]: lessons/lesson-12.md
-[Lesson 13]: lessons/lesson-13.md
-[Lesson 14]: lessons/lesson-14.md
-[Lesson 15]: lessons/lesson-15.md
-[Lesson 16]: lessons/lesson-16.md
-[Lesson 17]: lessons/lesson-17.md
-[Lesson 18]: lessons/lesson-18.md
-[Lesson 19]: lessons/lesson-19.md
+Note that all colors have an inline style set to a custom property named: --color-0 to --color-99. Generating 100 colors programatically might be a good solution. 
 
-[CSS Diner CSS ZenGarden Type]: lessons/lesson-01.md#after-class
-[CSS Zen Garden Card and Button]: lessons/lesson-03.md#after-class
-[CSS Zen Garden Background Images]: lessons/lesson-04.md#after-class
-[CSS Zen Garden Grid]: lessons/lesson-05.md#after-class
-[CSS Zen Garden + CSS Framework]: lessons/lesson-06.md#after-class
-[Your CSS Framework]: lessons/lesson-07.md#after-class
-[Your framework Navbars]: lessons/lesson-08.md#after-class
-[Lesson 9 Form Controls]: lessons/lesson-09.md#after-class
+Possible solutions for this problem would be to use JS or SASS. 
 
-## Evaluation
-To pass this course you must meet the following requirements:
+1) JS solution would need to assign an inline color to each color swatch. 
 
-- Pass 70% projects according to the associated project rubric
-- Pass the final summative assessment according to the rubric as specified in this class
-    - This will be further explained in the [study guide](study-guide.md)
-- Actively participate in class and abide by the attendance policy
-- Make up all classwork from all absences
+2) The SASS solution would require using a loop to generate style rules for all 100 color properties. The output should look like this: 
 
-##  Information Resources
+```CSS
+--color-0: hsl(0, 100%, 50%);
+--color-1: hsl(3, 100%, 50%);
+--color-2: hsl(6, 100%, 50%);
+--color-3: hsl(9, 100%, 50%);
+...
+```
 
-Any additional resources you may need (online books, etc.) can be found here. You can also find additional resources through the library linked below:
+## 6 Shopping cart 
 
-- [make.sc/library](http://make.sc/library)
+Clicking a color swatch adds it to the shopping cart. The cart is a list and each row is made up of some text, buttons, and an input. **You should style these.**
 
-## Make School Course Policies
+In this step your goal is to style the form elements that show up in the shopping cart. 
 
-- [Program Learning Outcomes](https://make.sc/program-learning-outcomes) - What you will achieve after finishing Make School, all courses are designed around these outcomes.
-- [Grading System](https://make.sc/grading-system) - How grading is done at Make School
-- [Diversity and Inclusion Statement](https://make.sc/diversity-and-inclusion-statement) - Learn about Diversity and Inclusion at Make School
-- [Academic Honesty](https://make.sc/academic-honesty-policy) - Our policies around plagerism, cheating, and other forms of academic misconduct 
-- [Attendance Policy](https://make.sc/attendance-policy) - What we expect from you in terms of attendance for all classes at Make School
-- [Course Credit Policy](https://make.sc/course-credit-policy) - Our policy for how you obtain credit for your courses
-- [Disability Services (Academic Accommodations)](https://make.sc/disability-services) - Services and accommodations we provide for students
-- [Student Handbook](https://make.sc/student-handbook) - Guidelines, policies, and resources for all Make School students
+## 7 Style the contact form
+
+At the bottom of the page is a contact form. Your goal is style this. 
+
+None of the elemenets should use the default styles and all element should look the same. 
+
+## 8 Ticker Tape 
+
+Create a web component that animates the text inside with a ticker tape effect. Use the ticker tape component at the top of the page to animate the text: `<h1>...Color.com is awesome...</h1>`. 
+
+The ticker tape should moves the text across the screen. You can take one of two approaches. 
+
+1) Manipulate the string content. Use a timer to take the first character of the string and move it to the end of the string. Doing this over time you'll end up with: 
+
+- Hello
+- elloH
+- lloHe
+- loHel
+- oHell
+- Hello
+
+2) Create an inner element containing the the text. Transform this element from right to left. At the end of the animation Move it back to the right and start over again.
+
+Taking this approach it would be easiest to use `@keyframes`. To do this in a web component you'll want to define this in a template. See the example [here](https://github.com/Make-School-Labs/simple-component/blob/master/simple-components-templates/01-counter-template/fancy-counter.js). Note the styles are in a string in a `<style>` tag. You could define your `@keyframes` block here along with other animation styles.
+
+Notice that all of the styles here are defined in a template and the template is used in the component. 
+
+```js
+const tempNode = template.content.cloneNode(true)
+this._shadowRoot = this.attachShadow({ mode: 'open' });
+this._shadowRoot.appendChild(tempNode)
+```
+
+## Thanks! 
+
+Thanks for class please fill out the course evaluation if you haven't already: 
+
+https://make.sc/few_2.2_survey
